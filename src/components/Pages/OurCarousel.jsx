@@ -24,7 +24,7 @@ const OurCarousel = () => {
                 carousel_item.map(item => {
                     return ( 
                     <div className="carousel">
-                        <img src={`./${item.image}`} alt="" />
+                        <img src={`./${item.image}`} alt="" sx={{height:"100px"}} />
                         <p className="legend">{item.text}</p>
                     </div>
                     )

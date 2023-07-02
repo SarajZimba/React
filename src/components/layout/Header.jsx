@@ -55,6 +55,7 @@ const Header = () => {
         </li>
         <li className="nav-item">
           <Link className="nav-link" to={'/cart'}>Cart</Link>
+          <Link className="nav-link" to={'/hooks'}>Hooks</Link>
         </li>
       </ul>
     </div>

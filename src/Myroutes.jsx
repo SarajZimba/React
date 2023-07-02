@@ -11,6 +11,8 @@ import FAQs from './components/Pages/FAQs'
 import Contact from './components/Pages/contact'
 import Cart from './components/Pages/Cart'
 import Deals from './components/Pages/Deals'
+import Hooks from './components/Pages/Hooks'
+import Counter from './Hooks/Counter'
 
 const Myroutes = () => {
   return (
@@ -26,6 +28,10 @@ const Myroutes = () => {
               <Route path='/contact' element={<Contact/>}/>
               <Route path='/cart' element={<Cart/>}/>
               <Route path='/deals' element={<Deals/>}/>
+              <Route path='/hooks' element={<Hooks/>}/>
+
+              {/* //Hooks */}
+              <Route path='/counter' element={<Counter/>}/>
             </Route>
             
         </Routes>
