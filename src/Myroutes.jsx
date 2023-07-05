@@ -15,6 +15,9 @@ import Hooks from './components/Pages/Hooks'
 import Counter from './Hooks/Counter'
 import ComponentB from './Hooks/ComponentB'
 import Welcome from './Hooks/Welcome'
+import DataFetch from './Hooks/DataFetch'
+import Post from './Hooks/Post'
+import Count from './redux/Count'
 
 const Myroutes = () => {
   return (
@@ -35,7 +38,12 @@ const Myroutes = () => {
               {/* //Hooks */}
               <Route path='/counter' element={<Counter/>}/>
               <Route path='/component' element={<ComponentB/>}/>
-              <Route path='/welcome/:name' element={<Welcome/>}/>
+              <Route path='/welcome/:name/:email' element={<Welcome/>}/>
+              <Route path='/data' element={<DataFetch/>}/>
+              <Route path='/posts/:id' element={<Post/>}/>
+
+              {/* redux */}
+              <Route path='/count' element={<Count/>}/>
 
             </Route>
             

@@ -1,6 +1,9 @@
 import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import { useNavigate } from 'react-router-dom';
+
+
 
 const OurCarousel = () => {
     let carousel_item = [{
@@ -16,7 +19,11 @@ const OurCarousel = () => {
         text: 'Image 1'
     }]
 
+    
+
     return (
+        <>
+        
         <Carousel autoPlay={true} interval={3000} infiniteLoop={true}>
             {
 
@@ -32,7 +39,7 @@ const OurCarousel = () => {
                 })
             }
         </Carousel>
-
+        </>
     )
 
 }
